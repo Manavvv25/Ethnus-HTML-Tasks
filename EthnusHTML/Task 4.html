@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 40%;
+            margin: 50px auto;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            padding: 8px;
+        }
+        input, select {
+            width: 200px;
+            padding: 5px;
+        }
+        .btn {
+            padding: 5px 10px;
+            background-color: #f0c040;
+            border: 1px solid #999;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #e0a030;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <form>
+            <table>
+                <tr>
+                    <td><label for="fullname">Full Name:</label></td>
+                    <td><input type="text" id="fullname"></td>
+                </tr>
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" id="username"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="repassword">Re Password:</label></td>
+                    <td><input type="password" id="repassword"></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td><input type="text" id="address"></td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age:</label></td>
+                    <td><input type="number" id="age"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td>
+                        <select id="gender">
+                            <option selected>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit" class="btn">Save</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>

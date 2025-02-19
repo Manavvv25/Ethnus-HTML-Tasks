@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+        }
+        .btn {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+        }
+        .btn-primary {
+            background-color: blue;
+            color: white;
+        }
+        .btn-secondary {
+            background-color: green;
+            color: white;
+        }
+        .hidden {
+            display: none;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Welcome to User Management</h2>
+        <p>Use the buttons below to navigate:</p>
+        <button class="btn btn-primary" onclick="showRegisterForm()">Register a User</button>
+        <button class="btn btn-secondary" onclick="showUsers()">View Registered Users</button>
+
+        <div id="registerForm" class="hidden">
+            <h2>User Registration</h2>
+            <input type="text" id="name" placeholder="Name"><br><br>
+            <input type="email" id="email" placeholder="Email"><br><br>
+            <input type="text" id="contact" placeholder="Contact"><br><br>
+            <input type="text" id="address" placeholder="Address"><br><br>
+            <button class="btn btn-primary" onclick="registerUser()">Register</button>
+        </div>
+
+        <div id="usersTable" class="hidden">
+            <h2>Registered Users</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody id="usersList"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="Task9.js"></script>
+</body>
+</html>

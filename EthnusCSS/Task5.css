@@ -1,0 +1,54 @@
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #d3c653;
+}
+
+.container {
+    display: flex;
+    border: 1px dotted black;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+}
+
+.sidebar a {
+    display: block;
+    background-color: white;
+    padding: 5px;
+    margin: 5px 0;
+    text-decoration: none;
+    color: blue;
+    border-left: 10px solid black;
+    text-align: center;
+}
+
+.sidebar a:hover {
+    background-color: lightgray;
+}
+
+.content {
+    padding: 20px;
+    flex: 1;
+}
+
+h1 {
+    color: purple;
+    font-size: 2em;
+}
+
+hr {
+    border: none;
+    border-top: 1px dashed black;
+}
+
+em {
+    font-style: italic;
+}
